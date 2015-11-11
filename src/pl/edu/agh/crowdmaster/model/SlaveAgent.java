@@ -1,4 +1,4 @@
-package agents;
+package pl.edu.agh.crowdmaster.model;
 
 
 /**

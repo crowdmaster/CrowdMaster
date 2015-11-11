@@ -1,4 +1,4 @@
-package agents;
+package pl.edu.agh.crowdmaster.model;
 
 import java.util.ArrayList;
 import java.util.List;

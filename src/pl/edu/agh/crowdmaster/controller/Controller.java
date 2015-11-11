@@ -1,4 +1,4 @@
-package controller;
+package pl.edu.agh.crowdmaster.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
