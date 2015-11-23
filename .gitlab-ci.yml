@@ -1,1 +1,8 @@
-script: mvn clean verify
+stages:
+  - build
+
+building:
+  script:
+    - mvn clean verify
+
+  stage: build
