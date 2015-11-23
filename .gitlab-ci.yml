@@ -3,6 +3,7 @@ stages:
 
 building:
   script:
+    - pwd
     - mvn clean verify
 
   stage: build
