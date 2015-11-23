@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="446.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.crowdmaster.controller.Controller">
+   <children>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <MenuBar maxHeight="-Infinity" minHeight="-Infinity">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Simulation">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#runSimulation" text="Run" />
+                        <MenuItem disable="true" mnemonicParsing="false" onAction="#stopSimulation" text="Stop" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Map">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#edit" text="Edit" />
+                        <MenuItem mnemonicParsing="false" onAction="#open" text="Open" />
+                        <MenuItem mnemonicParsing="false" onAction="#save" text="Save" />
+                        <MenuItem mnemonicParsing="false" onAction="#generate" text="Generate" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="image" fitHeight="88.0" fitWidth="108.0" onMouseClicked="#click" pickOnBounds="true">
+                     <cursor>
+                        <Cursor fx:constant="CROSSHAIR" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+         </items>
+      </SplitPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
