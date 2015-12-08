@@ -1,9 +1,0 @@
-stages:
-  - build
-
-building:
-  script:
-    - pwd
-    - mvn clean verify
-
-  stage: build
